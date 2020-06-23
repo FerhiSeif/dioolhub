@@ -15,7 +15,7 @@ const Header = () => (
 		<li className="active"><a href="#">Home</a></li>
 		<li><a href="#">About</a></li>
 		<li><a href="#">Pricing</a></li>
-		<li><a href="#">API</a></li>
+		<li><a href="https://api.diool.com/">API</a></li>
 		<li><a href="#">For Distributor</a></li>
 		<li><a href="#">Sign in</a></li>
 	</ul>

@@ -31,8 +31,8 @@ transaction:207,
   return (
     <div className="BlockChat-contain">
       <div className="estimation-result">
-  <p className="estimation-textCont"><span className="small-text-white">You mau earn : </span> <span className="XAF-text"> XAF </span> <span className="number-earn">{state.revenue}</span></p>
-       <p className="estimation-textCont"><span className="small-text-white">You mau make : </span> <span className="number-transaction">{state.transaction} transactions</span> <span className="small-text-white">per month</span></p>
+  <p className="estimation-textCont"><span className="small-text-white">You may earn : </span> <span className="XAF-text"> XAF </span> <span className="number-earn">{state.revenue}</span></p>
+       <p className="estimation-textCont secondtext-estim"><span className="small-text-white">You may make : </span> <span className="number-transaction">{state.transaction} transactions</span> <span className="small-text-white">per month</span></p>
       </div>
       <div className="chart-container">
         
