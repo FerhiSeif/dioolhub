@@ -6,7 +6,7 @@ import './Chart.css'
 
 function Chart({data}) {
 
-const [state, setState] = useState({dataChart:[{date: "Airtime eRecharges : XAF ", value:16350, opac:0.1},{date:"Bills Collection : XAF ", value: 0, opac:0.3}, {date: "Cash Deposits : XAF ", value: 0, opac:0.6},{date: "Cash Withdrawals : XHF ", value: 0, opac:0.8}],
+const [state, setState] = useState({dataChart:[{date: "Airtime eRecharges : XAF ", value:16350,opac:"#CBE2F7"},{date:"Bills Collection : XAF ", value: 0, opac:"#8AB0DD"}, {date: "Cash Deposits : XAF ", value: 0, opac:"#3C67A9"},{date: "Cash Withdrawals : XHF ", value: 0,  opac:"#191745"}],
 revenue:16350,
 transaction:207,
 })
@@ -19,14 +19,14 @@ transaction:207,
 // const [data, setData] = useState([{shop : '0', capital:50000, actifDay:15, transaction: 207, revenue:16350, recharge:16350, retrait:0, paiment:0,services:0 }])
  useEffect(()=>{
    if(data!==undefined){
-  setState({dataChart:[{date: "Airtime eRecharges : XAF ", value: data.recharge, opac:0.1},{date:"Bills Collection : XAF ", value:data.paiment, opac:0.3}, {date: "Cash Deposits : XAF ", value: data.services, opac:0.6},{date: "Cash Withdrawals : XHF ", value:data.retrait, opac:0.8}],
+  setState({dataChart:[{date: "Airtime eRecharges : XAF ", value: data.recharge, opac:"#CBE2F7"},{date:"Bills Collection : XAF ", value:data.paiment, opac:"#8AB0DD"}, {date: "Cash Deposits : XAF ", value: data.services, opac:"#3C67A9"},{date: "Cash Withdrawals : XHF ", value:data.retrait, opac:"#191745"}],
   revenue:data.revenue,
   transaction:data.transaction,
 })
    }
 },[data])  
 
- console.log(data)
+ //console.log(data)
 
   return (
     <div className="BlockChat-contain">
